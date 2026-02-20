@@ -26,6 +26,8 @@ Running `flower.py` will:
 - Display an interactive 3D plot of the flowers
 - Write `flower_trajectories/stem{n}.json` and `flower_trajectories/petals{n}.json`
 
+![](media/Flower_figure.png)
+
 ## Rust — fly the swarm
 
 ### Install Rust
@@ -46,3 +48,5 @@ source $HOME/.cargo/env
 ```bash
 cargo run --example flower_swarm_compressed
 ```
+
+![](media/Flowers_high_exposure.png)

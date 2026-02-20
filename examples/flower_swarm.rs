@@ -19,11 +19,11 @@ use std::path::PathBuf;
 use tokio::time::{sleep, Duration};
 
 const URIS: &[&str] = &[
-    "radio://0/30/2M/BADBADBAD1",
-    "radio://0/30/2M/BADBADBAD2",
-    "radio://0/30/2M/BADBADBAD3",
-    "radio://0/30/2M/BADBADBAD4",
-    "radio://0/30/2M/BADBADBAD5",
+    "radio://0/80/2M/E7E7E7E7E7",
+    "radio://0/80/2M/E7E7E7E7E8",
+    "radio://0/80/2M/E7E7E7E7E9",
+    "radio://0/80/2M/E7E7E7E7EA",
+    "radio://0/80/2M/E7E7E7E7EB",
 ];
 
 

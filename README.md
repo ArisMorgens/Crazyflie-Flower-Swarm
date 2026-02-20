@@ -1,7 +1,6 @@
 # Crazyflie Flower Swarm
 
-Generates 3D flower trajectories for a Crazyflie drone swarm.
-`flower.py` produces the trajectory JSON files consumed by the Rust swarm script.
+A repository for generating 3D flower trajectories for a swarm of Crazyflie drones.
 
 ## Python — generate trajectories
 
@@ -29,10 +28,19 @@ Running `flower.py` will:
 
 ## Rust — fly the swarm
 
-Requires [Rust](https://rustup.rs) and a Crazyradio dongle.
+### Install Rust
 
-1. Set the drone URIs in `examples/flower_swarm_compressed.rs` (`URIS` constant)
-2. Generate the trajectories with `flower.py` (see above)
+If you don't have Rust installed:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+```
+
+### Run
+
+1. Generate the trajectories with `flower.py` (see above)
+2. Set the drone URIs in `examples/flower_swarm_compressed.rs`
 3. Run:
 
 ```bash

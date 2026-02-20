@@ -1,0 +1,11 @@
+# Python
+.venv
+__pycache__
+*.egg-info
+build
+
+# Rust
+target
+
+# Runtime
+cache

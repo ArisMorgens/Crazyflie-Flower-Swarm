@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib
 matplotlib.use('QtAgg')
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 
 def generate_petal(a=0.5, b=0.8, num_points=20):

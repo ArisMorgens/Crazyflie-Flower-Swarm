@@ -1,13 +1,11 @@
 //! Flower swarm demo (compressed trajectories).
 //!
-//! This is a compressed-trajectory version of flower_swarm.rs.
-//! Each Crazyflie in the swarm uploads two compressed trajectories from JSON files:
+//! Each Crazyflie in the swarm receives two compressed trajectories from JSON files:
 //!   - `flower_trajectories/stem1.json`   → trajectory ID 1
 //!   - `flower_trajectories/petals1.json` → trajectory ID 2
 //!
 //! The whole swarm runs in sync: arm → takeoff → stem → petals → land.
 //!
-//! Compressed trajectories use much less memory than Poly4D.
 
 use crazyflie_lib::subsystems::high_level_commander::TRAJECTORY_TYPE_POLY4D_COMPRESSED;
 use crazyflie_lib::subsystems::memory::{CompressedSegment, CompressedStart, MemoryType, TrajectoryMemory};
